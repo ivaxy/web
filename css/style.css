@@ -1,0 +1,420 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    padding: 50px 0 100px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* ----- Header ----- */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(50, 50, 50, 0.356) ), url(../img/header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav a {
+    height: 100%;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: .1s ease-in-out all;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    font-weight: 300;
+    transition: ease-in-out .1.5s;
+    font-size: 25px;
+}
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+header .textos-header h1 {
+    font-size: 50px;
+    
+}
+ header.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.ola {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    height: 150px;
+    overflow: hidden;
+}
+/* Boton flotante ekisde */
+
+.btn-flotante {
+    border: none;
+    text-decoration: none;
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	color: #ffffff; /* Color del texto */
+	border-radius: 50px; /* Bode del botron */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #363636ea; /* Color de fondo */
+	padding: 18px 20px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #c7c7c7; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+    color: #000000; /* Color del texto */
+}
+/*Dialogo custom ajsjafj*/
+
+dialog {
+    scrollbar-width: none;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0;
+}
+.dialog_contact {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    border: 0;
+    width: 100%;
+}
+.contenedorrr {
+    scrollbar-width: none;
+    align-items: center;
+    margin: 200px 350px 300px 400px;
+}
+.main-block {
+    display: flex;
+    width: 100%;
+    padding: 10px 0; 
+    border-radius: 5px;
+    background-color: rgba(50, 50, 50, 0.911);
+    margin-right: 40px;
+}
+.main-block .block-item .left p {
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+}
+.pd1 {
+    font-size: 20px;
+}
+.pd1 small {
+    font-size: 15px;
+}
+.block-item {
+    color: white;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+}
+
+.block-item {
+    width: 50%;
+    padding: 20px; 
+}
+.block-item.right {
+    border-left: 1px solid #aaa;
+}
+i {
+    width: 50px;
+    font-size: 24px;
+}
+.btn {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #666;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+.btn span {
+    font-size: 16px;
+}
+.facebook {
+    background: #3a589e;
+}
+.twitter {
+    background: #429cd6;
+}
+.google{
+    background: #d34836;
+}
+
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+
+/* ----- Contenido ----- */
+.contenido-secc {
+    width: 100%;
+
+}
+.contenedor-cero {
+    width: 100%;
+    overflow-x: hidden;
+}
+.card-contenedor {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #f2f2f2;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+    width: 350px;
+    height: 555px;
+    box-shadow: 3px 3px 15px #00000060;
+}
+.card img {
+    height: 200px;
+}
+.card:hover {
+    transition: ease-in-out .3s;
+    transform: translateY(-7px);
+    box-shadow: 2px 2px 14px #00000060;
+}
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.fila > .text1-f, .text2-f {
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.top-radius {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-titulo {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.card-titulo h4{
+    margin-bottom: 5px;
+}
+.card-footer {
+    padding-left: 3rem !important; /*todo eje importante ;v */
+    padding-right: 3rem !important;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    width: 100%;
+    font-size: 18px;
+}
+.boton-read {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    margin: 0px 100px 20px 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 50PX;
+}
+.boton-read:hover {
+    transition: ease-in-out .4s;
+    transform: scale(1.1);
+}
+.lab {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text-right {
+    text-align: right;
+}
+.border-right {
+    border-right: 1px solid #dee2e6 !important;
+}
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+.text-center {
+    text-align: center !important; /*loj mismo :D */
+}
+
+/* ----- Galeria de Anexos ----- */
+
+.portafolio {
+    background: #f2f2f2;
+}
+.titulo {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.imagen-port {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.imagen-port > a > img:hover {
+    transition: ease-in-out .2s;
+    transform: scale(1.1);
+}
+
+
+/* ----- Footer ----- */
+
+.pie-pagina {
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    overflow-x: hidden;
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    grid-gap: 50px;
+    padding: 45px 0px;
+    padding-right: 50px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box_xd {
+    align-items: center;
+    display: flex;
+    color: white;
+}
+/*OJITO con la animacion*/
+.pie-pagina .grupo-1 .box_xd figure img {
+    width: 100px;
+    animation: rotation 10s infinite linear;
+    margin-right: 10px;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/*FIN de la animacion xd*/
+.pie-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+    color: rgb(240, 240, 240);
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.pie-pagina .grupo-1 .box .link-rapido a {
+    display: grid;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+.pie-pagina .grupo-1 .box .link-rapido a:hover {
+    transform: scale(1.2);
+}
+.pie-pagina .grupo-2 {
+    width: 100%;
+    background-color: rgb(121, 121, 121);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}

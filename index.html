@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mostrar al cliente información acerca de los ciclos de mantenimiento de computadoras en un laboratorio">
+        <meta name="generator" content="Visual Studio Code 1.60.1">
+        <meta name="distribution" content="local">
+        <title>Ciclo de Mantenimiento</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lightbox.css"> <!-- libreria para visualizar imagenes -->
+        <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Inicio del Header -->
+        <header>
+            <nav id="menu">
+                <a class="_a" href="#"><b>Inicio</b></a>
+                <a class="_a" href="#lab"><b>Laboratorios</b></a>
+                <a class="_a" href="#galery"><b>Galeria</b></a>
+                <a class="_a" href="#footer"><b>Acerca de</b></a>
+                <span class="indicador" id="indicador"></span>
+            </nav>
+            <section class="textos-header">
+                <h1>Ciclos de Matenimiento</h1>
+                <h2>de Computadoras en un Laboratorio</h2>
+            </section>
+            <div class="ola"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke:none; fill:rgb(255, 255, 255);"></path></svg>
+            </div>
+        </header>
+        <!-- Fin del header -->
+        <main>
+            <!-- Dialogo custom -->
+            <dialog id="favDialog" class="dialog_contact">
+                <div class="contenedorrr">
+                    <div class="main-block">
+                        <div class="block-item left">
+                          <h1 class="h1-d1">Contáctenos:</h1> <br>
+                          <p class="pd1">Nos encontramos en: <br> <br> <small>Instituto Politecnico Fernando Aguado y Rico Belascoain Esquina Maloja Centro Habana.</small></p> <br>
+                        </div>
+                        <div class="block-item right">
+                          <button class="btn facebook"><span>Facebook</span></button>
+                          <button class="btn twitter"><span>Twitter</span></button>
+                          <button class="btn google"><span>Google</span></button>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+            <menu>
+              <button id="contact_boton" class="btn-flotante">Contactenos</button>
+            </menu>
+            <script>
+              (function() {
+                var updateButton = document.getElementById('contact_boton');
+                var cancelButton = document.getElementById('favDialog');
+                var favDialog = document.getElementById('favDialog');
+
+                updateButton.addEventListener('click', function() {
+                  favDialog.showModal();
+                });
+            
+                cancelButton.addEventListener('click', function() {
+                  favDialog.close();
+                });
+                
+              })();
+            </script>
+            <!-- Fin del dialogo custom -->
+            <!-- Inicio de la seccion de contenido -->
+            <section class="contenido-secc">
+                <div class="contenedor-cero">
+                    <div class="text-center lab" id="lab" style="font-size: 20px;">
+                        <h1 class="lab-t">Laboratorios</h1>
+                    </div>
+                    <div class="card-contenedor">
+                        <div class="cards">
+                            <div class="card">
+                                <img class="imagen-card top-radius" src="img/lab1.png" alt="">
+                                <div class="card-titulo text-center">
+                                    <h4 class="card-title" style="font-size: 20px;">Laboratorio 1</h4>
+                                    <p class="card-text" style="font-size: 18px;">Equipos de computación con bajos recursos de Hardware ya tiene mas de 3 años de vida util.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Total de Pc</strong></div>
+                                        <div class="text2-f">20</div>
+                                    </div>
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Problemas</strong></div>
+                                        <div class="text2-f">Ninguno</div>
+                                    </div>
+                                    <div class="fila">
+                                        <div class="text1-f text-right border-right"><strong>Acción</strong></div>
+                                        <div class="text2-f">Mantenimiento</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="boton-read" onclick="alert('En desarrollo..')">Informe tecnico</a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                    <img class="imagen-card top-radius" src="img/lab2.png" alt="">
+                                <div class="card-titulo text-center">
+                                    <h4 class="card-title" style="font-size: 20px;">Laboratorio 2</h4>
+                                    <p class="card-text" style="font-size: 18px;">Equipos de computación de gama media de Hardware ya tiene mas de 3 años de vida util.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Total de Pc</strong></div>
+                                        <div class="text2-f">20</div>
+                                    </div>
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Problemas</strong></div>
+                                        <div class="text2-f">Ninguno</div>
+                                    </div>
+                                    <div class="fila">
+                                        <div class="text1-f text-right border-right"><strong>Acción</strong></div>
+                                        <div class="text2-f">Mantenimiento</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="boton-read" onclick="alert('En desarrollo..')">Informe tecnico</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                    <img class="imagen-card top-radius" src="img/lab3.png" alt="">
+                                <div class="card-titulo text-center">
+                                    <h4 class="card-title" style="font-size: 20px;">Laboratorio 3</h4>
+                                    <p class="card-text" style="font-size: 18px;">Equipos de computación de gama alta ulizados por el personal de mas alto rango en el centro.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Total de Pc</strong></div>
+                                        <div class="text2-f">20</div>
+                                    </div>
+                                    <div class="fila border-bottom">
+                                        <div class="text1-f text-right border-right"><strong>Problemas</strong></div>
+                                        <div class="text2-f">Ninguno</div>
+                                    </div>
+                                    <div class="fila">
+                                        <div class="text1-f text-right border-right"><strong>Acción</strong></div>
+                                        <div class="text2-f">Mantenimiento</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="boton-read" onclick="alert('En desarrollo..')">Informe tecnico</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fin de la seccion de contenido -->
+            
+            <!-- Inicio de la Galeria -->
+            <section class="portafolio" id="galery">
+                <div class="contenedor">
+                    <h2 class="titulo" id="2" style="text-align: center; font-size: 25px;">Galeria del sito</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port" style="border-top-left-radius: 10px;">
+                            <a href="img/lab1.png" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/lab1.png" alt=""></a>
+                        </div>
+                        <div class="imagen-port">
+                            <a href="img/lab2.png" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/lab2.png" alt=""></a>
+                        </div>
+                        <div class="imagen-port">
+                            <a href="img/lab2.jpg" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/lab2.jpg" alt=""></a>
+                        </div>
+                        <div class="imagen-port" style="border-top-right-radius: 10px;">
+                            <a href="img/lab3.png" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/lab3.png" alt=""></a>
+                        </div>
+                        <div class="imagen-port" style="border-bottom-left-radius: 10px;">
+                            <a href="img/img5.jpg" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/img5.jpg" alt=""></a>
+                        </div>
+                        <div class="imagen-port">
+                            <a href="img/img6.jpg" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/img6.jpg" alt=""></a>
+                        </div>
+                        <div class="imagen-port">
+                            <a href="img/img7.jpg" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/img7.jpg" alt=""></a>
+                        </div>
+                        <div class="imagen-port" style="border-bottom-right-radius: 10px;">
+                            <a href="img/header2.jpg" data-lightbox="roadtrip" data-title="Galeria del sitio"><img src="img/header2.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fin de la Galeria -->
+        </main>
+        <!-- Inicio del footer -->
+        <footer class="pie-pagina" id="footer">
+            <div class="grupo-1">
+                <!-- Caja 1 -->
+                <div class="box_xd">
+                    <figure>
+                        <a href="#">
+                            <img src="img/logo.jpg" alt="logo de la web">
+                        </a>
+                    </figure>
+                    <h2>Ciclo de Matenimiento de <br> Computadoras en un Laboratorio</h2>
+                </div>
+                <!-- Caja 2 -->
+                <div class="box">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Somos un pequeño grupo de estudiantes <br> con grandes metas para el futuro</p>
+                </div>
+                <!-- Caja 3 -->
+                <div class="box">
+                    <h2>Mapa del sitio</h2>
+                    <div class="link-rapido">
+                        <a href="#">Inicio</a>
+                        <a href="#lab">Laboratorios</a>
+                        <a href="#galery">Galeria</a>
+                        <a href="#footer">Acerca de</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; <b>Ciclo de mantenimiento</b> - Todos los derechos reservados</small>
+            </div>
+        </footer>
+        <!-- Fin del footer -->
+        <!-- Lib de lightbox para la galeria -->
+        <script src="js/lightbox-plus-jquery.min.js"></script>  
+    </body>
+</html>
